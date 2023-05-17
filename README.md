@@ -13,7 +13,7 @@
 # Tools & Version
 
 - Windows 10
-- Eclipse 2020/03
+- Eclipse 2019/06
     - [다운로드](https://www.eclipse.org/downloads/packages/release/2019-06/r)
 - Java Version - 1.8.0.361
     - [다운로드](https://www.oracle.com/java/technologies/javase/8u361-relnotes.html)
