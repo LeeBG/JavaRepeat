@@ -18,14 +18,17 @@ public class Quiz4 {
 		
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("생년월일을 입력해주세요 : ");
+		System.out.print("생년월일을 입력해주세요(8자리) : ");
 		
-		birthYear = Integer.parseInt(sc.nextLine());
+		int sang = Integer.parseInt(sc.nextLine());
 		
-		age = currentYear - (birthYear/10000)+1;
-		month = birt%10000
-		System.out.println();
+		birthYear = sang / 10000; 
+		age = currentYear - birthYear + 1;
+		month = (sang % 10000) / 100;
+		date = (sang % 10000) % 100;
 		
+		System.out.printf("출생 : %4d-%02d-%02d \n",birthYear,month,date);
+		System.out.printf("나이 : %d살 \n",age);
 		
 		sc.close();
 		
