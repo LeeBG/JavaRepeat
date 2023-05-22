@@ -4,11 +4,11 @@
 - [![자바로고](https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white)](https://www.oracle.com/kr/java/)
 
 # 노션
-- 노션 정리 : [Notion](https://www.notion.so/6492b9accfdc442e9eeb3477b8ff924a?v=ab30acd25a4c4d049f15b4ea9e174579)
+- 노션 정리 : [Notion](https://alder-talon-aab.notion.site/6-a10bdd54a2a24c48b79e122e93727868)
 
 # 스터디
 - 주중 매일 15:30 ~ 22:00
-- 복습 : 09:00 ~ 11:00
+- 복습 매일: 11:00 ~ 15:00
 
 # Tools & Version
 
@@ -28,7 +28,7 @@
 | 02 | 3일차 | 자바의 변수와 연산자  | [바로가기][day03] |
 | 03 | 4일차 | 자바의 문자열과 입출력 | [바로가기][day04] |
 | 04 | 5일차 | 자바의 조건 제어문 | [바로가기][day05] |
-| 05 | 6일차 |  | [바로가기][day06] |
+| 05 | 6일차 | 자바의 반복문 | [바로가기][day06] |
 | 06 | 7일차 |  | [바로가기][day07] |
 | 07 | 8일차 |  | [바로가기][day08] |
 | 08 | 9일차 |  | [바로가기][day09] |
