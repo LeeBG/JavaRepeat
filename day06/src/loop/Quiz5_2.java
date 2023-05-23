@@ -29,6 +29,7 @@ public class Quiz5_2 {
 		}
 		System.out.println("tmp : "+tmpStack.toString());
 		
+		// pop()을 하면 tmpStack의 전체 사이즈가 줄어들기 때문에 주의한다.
 		int stacknum = tmpStack.size();
 		
 		for(int i=0;i<stacknum;i++) {
