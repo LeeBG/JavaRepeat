@@ -27,7 +27,7 @@ public class Quiz4 {
 		month = (sang % 10000) / 100;
 		date = (sang % 10000) % 100;
 		
-		System.out.printf("출생 : %4d-%02d-%02d \n",birthYear,month,date);
+		System.out.printf("출생 : %4d-%02d-%02d \n",birthYear, month, date);
 		System.out.printf("나이 : %d살 \n",age);
 		
 		sc.close();
