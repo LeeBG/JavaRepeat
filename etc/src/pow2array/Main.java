@@ -9,20 +9,14 @@ class Solution {
     	if(arr.length==1) {
     		return 1;
     	}
-    	int num1 = 1;
     	int num2 = 2;
     	while(num2 < size) {
-    		num1 = num2;
     		num2 = num2*2;
     	}
     	return num2;
 	}
 	
     public int[] solution(int[] arr) {
-    	int size = 0;
-    	if(arr != null) {
-    		size = arr.length;
-    	}
     	int index = makeSize(arr);
     	System.out.println("index : " + index);
     	
