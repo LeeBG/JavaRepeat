@@ -1,6 +1,9 @@
 package starcraft;
 
 import starcraft.maps.Map;
+import starcraft.units.protoss.Zealot;
+import starcraft.units.terran.Vulture;
+import starcraft.units.zerg.Hydrarisk;
 
 public class Starcraft{
 	private Player otherPlayer;
@@ -8,15 +11,17 @@ public class Starcraft{
 	private Map map;
 	private boolean isStart;
 	
-	public Starcraft(Player player, Player otherPlayer, Map map) {
+	public Starcraft(Player player, Player otherPlayer, Map map) throws InterruptedException {
 		this.player = player;
 		this.otherPlayer = otherPlayer;
 		this.map = map;
 		this.isStart=false;
+		System.out.printf("%s(%s)와 %s(%s)의 경기가 곧 시작됩니다. \n",player.getName(),player.getRace(),otherPlayer.getName(),otherPlayer.getRace());
+		this.readyGame(player, otherPlayer);
 	}
 
 	
-	public void	readyGame() throws InterruptedException {
+	public void	readyGame(Player player1, Player player2) throws InterruptedException {
 		int count = 6;
 		while(count != 1) {
 			count --;
@@ -25,12 +30,31 @@ public class Starcraft{
 		}
 		System.out.println("게임이 시작되었습니다!!");
 		setStart(true);
-		startGame();
+		startGame(player1,player2);
 	}
 
-	public void startGame() {
+	public void startGame(Player player1, Player player2) {
 		if(isStart()) {
 			
+			if(player1.getRace().equals("저그")) {
+				player1.getUnits().add(new Hydrarisk(1));
+			}else if(player1.getRace().equals("테란")) {
+				player1.getUnits().add(new Vulture(true));
+			}else if(player1.getRace().equals("프로토스")){
+				player1.getUnits().add(new Zealot(1));
+			}
+			
+			if(player2.getRace().equals("저그")) {
+				player2.getUnits().add(new Hydrarisk(1));
+			}else if(player2.getRace().equals("테란")) {
+				player2.getUnits().add(new Vulture(true));
+			}else if(player2.getRace().equals("프로토스")){
+				player2.getUnits().add(new Zealot(1));
+			}
+						
+			
+			player1.getUnits().get(0).attack(player2.getUnits().get(0));
+			player2.getUnits().get(0).attack(player1.getUnits().get(0));
 		}
 	}
 	

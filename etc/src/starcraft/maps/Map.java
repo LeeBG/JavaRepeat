@@ -4,7 +4,7 @@ public class Map {
 	private String name;
 	private int x;
 	private int y;
-	private int mans; 		// 2인용 3인용 4인용 8인용
+	private int mans; 		// 2인용 3인용 4인용 8인용 맵
 	
 	
 	public Map(String name, int x, int y, int mans) {
