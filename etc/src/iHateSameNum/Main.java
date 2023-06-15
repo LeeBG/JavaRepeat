@@ -4,7 +4,6 @@ import java.util.*;
 
 class Solution {
     public int[] solution(int []arr) {
-        
         Stack<Integer> arrStack = new Stack<Integer>();
         
         for(int i=0;i<arr.length;i++) {
@@ -15,9 +14,10 @@ class Solution {
         
         int[] answer = new int[arrStack.size()];
         
-        for(int i=0;i<answer.length;i++) {
+        for(int i=answer.length-1;i>=0;i--) {
         	answer[i] = arrStack.pop();
         }
+ 
         System.out.println(Arrays.toString(answer));
         return answer;
     }
