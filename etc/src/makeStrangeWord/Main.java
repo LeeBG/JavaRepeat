@@ -4,18 +4,20 @@ package makeStrangeWord;
 class Solution {
 	public String solution(String s) {
 		String answer = "";
-		s = s.toUpperCase();
-		System.out.println(s);
-		
-		StringBuilder sb = new StringBuilder(s);
-		for(int i=0;i<sb.length();i++) {
-			if(i % 2 == 1 && (sb.charAt(i)<91 && sb.charAt(i)>64)) {
-				 sb.setCharAt(i, (char) (sb.charAt(i)+32));
+		String[] e = s.split("");
+		int index = 0;
+		for(int i=0;i<e.length;i++) {
+			if(e[i].equals(" ")) {
+				index = 0;
+			}else if(index % 2 == 0) {
+				e[i] = e[i].toUpperCase();
+				index++;
+			}else if(index % 2 == 1) {
+				e[i] = e[i].toLowerCase();
+				index++;
 			}
-			
+			answer += e[i];
 		}
-		answer = sb.toString();
-		System.out.println(answer);
 		return answer;
 	}
 }
