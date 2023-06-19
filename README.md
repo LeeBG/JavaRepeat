@@ -1,7 +1,5 @@
 # 자바 스터디 저장소
 
-![f34d500c0c7238696981aac731df6d35](https://github.com/Employment-Study/Team_StudyJava/assets/44068819/d67752fc-cbfa-439d-bf60-e3a80c5a22a9)
-
 # Language
 
 - [![자바로고](https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white)](https://www.oracle.com/kr/java/)
